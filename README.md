@@ -74,8 +74,8 @@ If you have extra time or want to practice your new React skills, here are some 
 
 
 # COMPLETED
-Display the location for each move in the format (col, row) in the move history list.
-Bold the currently selected item in the move list.
+- Display the location for each move in the format (col, row) in the move history list.
+- Bold the currently selected item in the move list.
 
 # IN PROGRESS
 Rewrite Board to use two loops to make the squares instead of hardcoding them.
