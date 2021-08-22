@@ -78,9 +78,9 @@ If you have extra time or want to practice your new React skills, here are some 
 - Bold the currently selected item in the move list.
 
 # IN PROGRESS
-Rewrite Board to use two loops to make the squares instead of hardcoding them.
+- Rewrite Board to use two loops to make the squares instead of hardcoding them.
 
 # TODO
-Add a toggle button that lets you sort the moves in either ascending or descending order.
-When someone wins, highlight the three squares that caused the win.
-When no one wins, display a message about the result being a draw.
+- Add a toggle button that lets you sort the moves in either ascending or descending order.
+- When someone wins, highlight the three squares that caused the win.
+- When no one wins, display a message about the result being a draw.
