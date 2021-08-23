@@ -23,31 +23,30 @@ import './index.css';
       );
     }
   
-    render() {
-        return (
-          // <div>
-          // for (let rows=0; rows < 3; rows++) {
-          //   <div className="board-row"></div>
-          // }
-
-          // </div>
-        <div>
-          <div className="board-row">
-            {this.renderSquare(0)}
-            {this.renderSquare(1)}
-            {this.renderSquare(2)}
-          </div>
-          <div className="board-row">
-            {this.renderSquare(3)}
-            {this.renderSquare(4)}
-            {this.renderSquare(5)}
-          </div>
-          <div className="board-row">
-            {this.renderSquare(6)}
-            {this.renderSquare(7)}
-            {this.renderSquare(8)}
-          </div>
+    renderRow(row) {
+      const squares = [];
+      const offset = row * 3; // this makes sure first row is 0,1,2, second row is 3,4,5, etc.
+      for (let s = 0; s < 3; s++) {
+        squares.push(
+          this.renderSquare(offset + s)
+          );
+      }
+      return (
+        <div className="board-row">
+          {squares}
         </div>
+      )
+    }
+
+    render() {
+      const rows = [];
+      for (let r=0; r < 3; r++) {
+        rows.push(
+          this.renderRow(r)
+        );
+      }  
+      return (   
+          <div>{rows}</div>
       );
     }
   }
